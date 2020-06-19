@@ -1,0 +1,33 @@
+#Banner {
+    height: 500px;
+    width: 100%;
+    background-color: green;
+    background-image: url(../img/image-banner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.yuki {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 2rem 0;
+}
+.yuki__contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.yuki .yuki__foto {
+    background-image: url(../img/profile-image.png);
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+}
