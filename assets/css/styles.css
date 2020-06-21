@@ -6,29 +6,104 @@ body {
 p {
   display: inline-block; }
 
+h4 {
+  margin: 1rem 0; }
+
+h5 {
+  margin: 1.5rem 0; }
+
+.fas, .far {
+  color: black; }
+
 body {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Montserrat", "Open Sans", sans-serif; }
+
+h5 {
+  font-family: 'open-sans';
+  font-weight: bolder; }
+
+p {
+  color: gray; }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1;
   width: 100%; }
   #navbar .iconos {
     flex-grow: unset; }
 
-.container__card_foto {
+.container__card {
+  width: 100%; }
+
+.container__card_foto-1 {
   background-image: url(../img/image-1.png);
-  background-color: coral;
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-2 {
+  background-image: url(../img/image-2.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-3 {
+  background-image: url(../img/image-3.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-4 {
+  background-image: url(../img/image-4.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-5 {
+  background-image: url(../img/image-5.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-6 {
+  background-image: url(../img/image-6.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-7 {
+  background-image: url(../img/image-7.png);
+  background-color: rgba(124, 193, 196, 0.137);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px; }
+
+.container__card_foto-8 {
+  background-image: url(../img/image-8.png);
+  background-color: rgba(124, 193, 196, 0.137);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 220px; }
 
 #Banner {
-  height: 500px;
+  height: 550px;
   width: 100%;
   background-color: green;
   background-image: url(../img/image-banner.png);
@@ -42,12 +117,13 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid gray;
-  padding: 2rem 8rem; }
+  padding: 2rem 1rem; }
 
-.yuki__contenedor {
+.yuki_contenedor {
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -56,7 +132,17 @@ body {
   background-image: url(../img/profile-image.png);
   background-size: cover;
   background-position: center;
+  border-radius: 50%;
   width: 90px;
   height: 90px; }
+
+.yuki__seguidores {
+  width: auto;
+  padding: 0 1rem; }
+
+@media (min-width: 768px) {
+  .yuki {
+    padding: 2rem 6rem;
+    flex-direction: row; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 #Banner {
-    height: 500px;
+    height: 550px;
     width: 100%;
     background-color: green;
     background-image: url(../img/image-banner.png);
@@ -13,12 +13,13 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid gray;
-    padding: 2rem 8rem;
+    padding: 2rem 1rem;
 }
-.yuki__contenedor {
+.yuki_contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,6 +29,18 @@
     background-image: url(../img/profile-image.png);
     background-size: cover;
     background-position: center;
+    border-radius: 50%;
     width: 90px;
     height: 90px;
+}
+.yuki__seguidores {
+    width: auto;
+    padding: 0 1rem;
+}
+
+@media (min-width:768px){
+    .yuki {
+        padding: 2rem 6rem;
+        flex-direction: row;
+    }
 }
