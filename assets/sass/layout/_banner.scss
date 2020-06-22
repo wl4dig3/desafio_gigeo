@@ -1,5 +1,5 @@
 #Banner {
-    height: 550px;
+    height: 300px;
     width: 100%;
     background-color: green;
     background-image: url(../img/image-banner.png);
@@ -16,14 +16,23 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    
     padding: 2rem 1rem;
 }
 .yuki_contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 }
+.yuki_contenedor h4 {
+    margin: 0;
+}
+.yuki_contenedor h6 {
+    color: gray;
+    font-size: 1em;
+}
+
 
 .yuki .yuki__foto {
     background-image: url(../img/profile-image.png);
@@ -32,6 +41,7 @@
     border-radius: 50%;
     width: 90px;
     height: 90px;
+    margin-right: 1.5rem;
 }
 .yuki__seguidores {
     width: auto;
@@ -39,8 +49,22 @@
 }
 
 @media (min-width:768px){
+    #Banner {
+        height: 550px;
+    }
+    
     .yuki {
         padding: 2rem 6rem;
+        border-bottom: 1px solid gray;
         flex-direction: row;
+    }
+    .yuki_contenedor {
+        width: 50%;
+    }
+}
+
+@media (min-width:1300px) {
+    .yuki {
+        padding: 2rem 8rem;
     }
 }

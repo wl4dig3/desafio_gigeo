@@ -1,11 +1,20 @@
 #Main_section {
     width: 100%;
     height: auto;
-    background-color: palegreen;
+    
 }
-#Main_section .container h4 {
-    padding: 3rem 0;
-    display: none   ;
+#Main_section h4 {
+    padding: 2.5rem 0;
+    text-align: center;   ;
+}
+
+// mediaquery
+
+@media (min-width:768px) {
+    #Main_section h4 {
+        text-align: left;
+
+    }
 }
 
     

@@ -1,6 +1,13 @@
 body {
   font-family: "Montserrat", "Open Sans", sans-serif;
 }
+#navbar .navbar-brand {
+  font-size: 1.5em;
+}
+
+#navbar .navbar-brand sup {
+  top: -.8em;
+}
 
 h5 {
   font-family: 'open-sans';

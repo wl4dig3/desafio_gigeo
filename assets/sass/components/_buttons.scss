@@ -1,4 +1,16 @@
-#Banner .yuki .btn-1 {
-    width: auto;
+#Banner .boton .btn {
+    
     display: none;
+}
+
+
+// Mediaquery
+
+@media (min-width:768px) {
+    
+    #Banner .boton .btn {
+        display: inline-block;
+        margin-right: .5rem;
+    }
+
 }

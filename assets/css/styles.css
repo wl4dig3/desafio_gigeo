@@ -6,9 +6,6 @@ body {
 p {
   display: inline-block; }
 
-h4 {
-  margin: 1rem 0; }
-
 h5 {
   margin: 1.5rem 0; }
 
@@ -17,6 +14,12 @@ h5 {
 
 body {
   font-family: "Montserrat", "Open Sans", sans-serif; }
+
+#navbar .navbar-brand {
+  font-size: 1.5em; }
+
+#navbar .navbar-brand sup {
+  top: -.8em; }
 
 h5 {
   font-family: 'open-sans';
@@ -38,6 +41,13 @@ p {
 .container__card {
   width: 100%; }
 
+#Banner .boton .btn {
+  display: none; }
+
+@media (min-width: 768px) {
+  #Banner .boton .btn {
+    display: inline-block;
+    margin-right: .5rem; } }
 .container__card_foto-1 {
   background-image: url(../img/image-1.png);
   background-color: rgba(124, 193, 196, 0.137);
@@ -103,7 +113,7 @@ p {
   height: 220px; }
 
 #Banner {
-  height: 550px;
+  height: 300px;
   width: 100%;
   background-color: green;
   background-image: url(../img/image-banner.png);
@@ -120,13 +130,20 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid gray;
   padding: 2rem 1rem; }
 
 .yuki_contenedor {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
+
+.yuki_contenedor h4 {
+  margin: 0; }
+
+.yuki_contenedor h6 {
+  color: gray;
+  font-size: 1em; }
 
 .yuki .yuki__foto {
   background-image: url(../img/profile-image.png);
@@ -134,15 +151,37 @@ p {
   background-position: center;
   border-radius: 50%;
   width: 90px;
-  height: 90px; }
+  height: 90px;
+  margin-right: 1.5rem; }
 
 .yuki__seguidores {
   width: auto;
   padding: 0 1rem; }
 
 @media (min-width: 768px) {
+  #Banner {
+    height: 550px; }
+
   .yuki {
     padding: 2rem 6rem;
-    flex-direction: row; } }
+    border-bottom: 1px solid gray;
+    flex-direction: row; }
+
+  .yuki_contenedor {
+    width: 50%; } }
+@media (min-width: 1300px) {
+  .yuki {
+    padding: 2rem 8rem; } }
+#Main_section {
+  width: 100%;
+  height: auto; }
+
+#Main_section h4 {
+  padding: 2.5rem 0;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  #Main_section h4 {
+    text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */
